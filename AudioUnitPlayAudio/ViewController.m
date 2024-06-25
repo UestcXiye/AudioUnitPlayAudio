@@ -41,7 +41,7 @@
     [self.playButton addTarget:self action:@selector(onDecodeStart) forControlEvents:UIControlEventTouchUpInside];
     
     self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateFrame)];
-    self.displayLink.preferredFramesPerSecond = 5;
+    self.displayLink.preferredFramesPerSecond = 12;
     [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
     
     [self.view addSubview:self.label];
